@@ -1,0 +1,20 @@
+{
+  "name": "stedb/plots",
+  "description": "Show plots",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "deep",
+      "email": "deep.rahman@stedbcorm.com"
+    }
+  ],
+  "require": {
+    "ext-json": "*"
+  },
+  "autpload": {
+    "psr-4": {
+      "Plots\\":"src"
+    }
+  }
+}

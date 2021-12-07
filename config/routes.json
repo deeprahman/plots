@@ -1,0 +1,6 @@
+{
+  "home": {
+    "controller": "home",
+    "method": "showHome"
+  }
+}
