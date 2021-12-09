@@ -10,7 +10,10 @@
     }
   ],
   "require": {
-    "ext-json": "*"
+    "ext-json": "*",
+    "ext-pdo": "*",
+    "twig/twig": "*",
+    "monolog/monolog": "^2.3"
   },
   "autpload": {
     "psr-4": {

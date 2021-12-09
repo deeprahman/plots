@@ -1,0 +1,12 @@
+{
+  "db": {
+    "driver": "mysql",
+    "user": "admin",
+    "password": "mJ!AM,)b8)\"!",
+    "host": "deeprahman.test",
+    "database": "test"
+  },
+  "log": {
+    "filePath": "./Logs/plots.log"
+  }
+}
