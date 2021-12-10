@@ -15,9 +15,9 @@
     "twig/twig": "*",
     "monolog/monolog": "^2.3"
   },
-  "autpload": {
+  "autoload": {
     "psr-4": {
-      "Plots\\":"src"
+      "Plots\\":"src/"
     }
   }
 }

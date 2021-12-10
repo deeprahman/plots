@@ -6,7 +6,5 @@
     "host": "deeprahman.test",
     "database": "test"
   },
-  "log": {
-    "filePath": "./Logs/plots.log"
-  }
+  "debug": "true"
 }

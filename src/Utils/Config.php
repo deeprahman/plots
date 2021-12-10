@@ -10,7 +10,7 @@ final class Config
 
     private function __construct(){
         $json = file_get_contents(
-            __DIR__ . "/../config/config.json"
+            ROOT . '/config/config.json'
         );
         $this->data = json_decode($json, true);
     }

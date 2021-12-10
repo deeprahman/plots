@@ -1,6 +1,10 @@
 {
+  "/": {
+    "controller": "ErrorController",
+    "method": "invalidPath"
+  },
   "home": {
-    "controller": "home",
-    "method": "showHome"
+    "controller": "HomeController",
+    "method": "homePage"
   }
 }
