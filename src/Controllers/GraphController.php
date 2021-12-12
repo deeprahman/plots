@@ -36,6 +36,7 @@ class GraphController extends AbstractController
 
     public function graphDisplay()
     {
+        $this->properties['pageIndicator'] = 'graph_display';
         if(!isset($_SESSION['dataFile'])){
             $this->properties['message'] = 'No file selected...';
             return $this->render('graph.twig', $this->properties);
@@ -43,7 +44,7 @@ class GraphController extends AbstractController
         $this->properties['dataFile'] = $_SESSION['dataFile'];
         $this->setPreliminaryProperties();
         $this->properties['message'] = 'Graph Display File Name: ' . $_SESSION['dataFile'];
-        $this->properties['pageIndicator'] = 'graph_display';
+
         $this->properties['graph'] = $this->processGraph();
         return $this->render('graph.twig', $this->properties);
     }

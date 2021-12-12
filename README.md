@@ -17,4 +17,4 @@ Python >= 3.5 and following packages must be installed, and the web server must 
 Address of the home page: http://your_domain_name.com/home
 
 
-_Note_: The file upload system is not implemented.  And Graph configuration are hard coded. 
+_Note_: The file upload system is not implemented (but can be easily be implemented).  And Graph configuration option are hard coded for the given data file in the DataFiles . 
