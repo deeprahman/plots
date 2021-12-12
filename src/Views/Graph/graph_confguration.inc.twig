@@ -1,0 +1,60 @@
+<p>
+    Graph Configuration page
+</p>
+<div>
+    <form action="{{ rootUrl|e }}/graph/display/{{ dataFile|e }}" method="POST" enctype="multipart/form-data">
+        <div>
+            <label for="index">Choose Dataframe Index:</label>
+
+            <select name="dataframeIndex" id="index">
+                <option value="Date">Date</option>
+                <option value="T10Y3M">T10Y3M</option>
+                <option value="Open">Open</option>
+                <option value="Low">Low</option>
+                <option value="Close">Close</option>
+                <option value="Adj Close">Adj Close</option>
+                <option value="Volume">Volume</option>
+            </select>
+        </div>
+        <div>
+            <label for="parameter_1">Choose the first Plot Input:</label>
+
+            <select name="param_1" id="parameter_1">
+                <option value="Date">Date</option>
+                <option value="T10Y3M">T10Y3M</option>
+                <option value="Open">Open</option>
+                <option value="Low">Low</option>
+                <option value="Close">Close</option>
+                <option value="Adj Close">Adj Close</option>
+                <option value="Volume">Volume</option>
+            </select>
+        </div>
+        <div>
+            <label for="parameter_2">Choose the seconf Plot Input:</label>
+
+            <select name="param_2" id="parameter_2">
+                <option value="Date">Date</option>
+                <option value="T10Y3M">T10Y3M</option>
+                <option value="Open">Open</option>
+                <option value="Low">Low</option>
+                <option value="Close">Close</option>
+                <option value="Adj Close">Adj Close</option>
+                <option value="Volume">Volume</option>
+            </select>
+        </div>
+        <div>
+            <label for="plot-color">Chose a color for second param:</label>
+
+            <select name="param_2_color" id="plot-color">
+                <option value="grey">Grey</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+
+            </select>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Show Line Plot</button>
+        </div>
+    </form>
+</div>

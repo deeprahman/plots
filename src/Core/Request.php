@@ -14,6 +14,7 @@ class Request
     private $method;
     private $params;
     private $cookies;
+    private $protocol;
 
     public function __construct(){
         $this->domain = $_SERVER['HTTP_HOST'];
@@ -22,8 +23,15 @@ class Request
         $this->params = new FilteredMap(
             array_merge($_POST, $_GET)
         );
+        $this->protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0 ? 'https://' : 'http://';
         $this->cookies = new FilteredMap($_COOKIE);
     }
+
+    public function getProtocol():string
+    {
+        return $this->protocol;
+    }
+
 
     public function getUrl():string{
         return $this->domain . $this->path;

@@ -1,0 +1,13 @@
+{% extends 'layout.twig' %}
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block contant %}
+    <h1> {{ message }}</h1>
+    {% if pageIndicator == 'graph_config' %}
+        {% include 'Graph/graph_confguration.inc.twig' %}
+    {% elseif pageIndicator == 'graph_display' %}
+        {% include 'Graph/graph_display.inc.twig' %}
+    {% endif %}
+{% endblock %}

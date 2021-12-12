@@ -6,5 +6,12 @@
     "host": "deeprahman.test",
     "database": "test"
   },
-  "debug": "true"
+  "debug": "true",
+  "pythonScript": {
+    "filePath": "Python/plot.py"
+  },
+  "data": {
+    "directoryPath": "DataFiles"
+  }
+
 }

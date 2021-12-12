@@ -40,6 +40,12 @@ abstract class AbstractController
     protected $log;
 
     /**
+     * Output of twig template
+     * @var string
+     */
+    protected $html;
+
+    /**
      * @throws \Plots\Exceptions\NotFoundException
      */
     public function __construct(

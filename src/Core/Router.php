@@ -14,7 +14,7 @@ class Router
     private $routeMap;
     private static $regexPatters = [
         'number' => '\d+',
-        'string' => '\w'
+        'string' => '[a-zA-Z0-9_\.]{1,30}'
     ];
 
     /**
