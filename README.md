@@ -14,6 +14,8 @@ Python >= 3.5 and following packages must be installed, and the web server must 
 * base64
 * sys
 
+Apache Web server must have mod_rewirte engine active
+
 Address of the home page: http://your_domain_name.com/home
 
 
