@@ -16,6 +16,21 @@ Python >= 3.5 and following packages must be installed, and the web server must 
 
 Apache Web server must have mod_rewirte engine active
 
+__Sample apache vhost__
+
+```.conf
+<virtualhost *:80>
+ServerName plot.deeprahman.test
+ServerAlias plot.deeprahman.test
+DocumentRoot /var/www/plots
+<Directory /var/www/plots>
+    AllowOverride All
+ </Directory>
+ErrorLog /var/www/plots/logs/error.log
+CustomLog /var/www/plots/logs/access.log combined
+</virtualhost>
+```
+
 Address of the home page: http://your_domain_name.com/home
 
 
