@@ -1,6 +1,5 @@
 /vendor/
 /composer.lock
 /logs/
-/.user.ini
 /Chart/
 /.idea/
